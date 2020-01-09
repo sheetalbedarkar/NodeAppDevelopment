@@ -1,6 +1,7 @@
 class abc {
     helloWorld = ((req, res) => {
-        res.send('Hello World')
+        let result = req.query.result
+        res.send(result)
     })
 }
 module.exports = new abc;
