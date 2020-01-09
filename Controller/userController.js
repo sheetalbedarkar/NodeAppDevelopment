@@ -1,6 +1,6 @@
 class abc {
     helloWorld = ((req, res) => {
-        let name = req.query.name
+        let name = req.params.name
         res.send(`Hello World ${name}`)
     })
 }
